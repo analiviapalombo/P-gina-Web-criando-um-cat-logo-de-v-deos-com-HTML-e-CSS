@@ -1,54 +1,68 @@
-/* Barra superior */
-header {
-    background-color: #ff69b4; /* Cor da barra (altere usando HEX) */
+/* ---- Configurações Gerais ---- */
+body {
+    margin: 0;
+    font-family: OpenDyslexic, OpenDyslexic;
+    background-color: #ffa4d3;
+}
+
+/* ---- Barra Superior ---- */
+#top-bar {
+    background-color: #a11043; /* COR DA BARRA - MUDE O HEX AQUI */
+    color: #ffc9e5; /* COR DO TEXTO - MUDE O HEX AQUI */
     padding: 15px;
     text-align: center;
+    font-size: 1.5em;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-#site-title {
-    color: #ffffff; /* Cor do texto da barra */
-    margin: 0;
-    font-size: 2em;
-}
-
-/* Layout principal */
+/* ---- Conteúdo Principal ---- */
 #content {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
     padding: 20px;
 }
 
-.row {
+.section {
     display: flex;
-    gap: 20px;
     align-items: flex-start;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #af366f;
+    padding-bottom: 10px;
 }
 
-.text {
+.section-text {
     flex: 1;
-    font-size: 1.2em;
+    padding-right: 20px;
 }
 
-.video iframe {
-    width: 560px;
-    height: 315px;
+.section-video iframe {
+    width: 400px;
+    height: 225px;
+    border: none;
 }
 
-/* Rodapé */
+/* ---- Rodapé ---- */
 footer {
-    margin-top: 40px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    font-size: 14px;
+    color: #af366f;
+}
+
+/* ---- Logo Twitter ---- */
+#twitter-logo {
     text-align: center;
-    padding: 20px;
+    padding: 30px;
 }
 
-#footer-text {
-    font-size: 1em;
+#twitter-logo img {
+    width: 50px;
+    transition: transform 0.3s ease;
 }
 
-.twitter-logo {
-    width: 40px;
-    height: 40px;
-    margin-top: 10px;
-    cursor: pointer;
+#twitter-logo img:hover {
+    transform: scale(1.1);
 }
