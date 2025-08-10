@@ -7,7 +7,7 @@ document.getElementById("site-title").innerText = "FUFFLE PUFF TALES";
 document.getElementById("footer-text").innerText = "feito por Nana";
 
 // Link do Twitter
-document.getElementById("twitter-link").href = "https://twitter.com/seu_usuario";
+document.getElementById("twitter-link").href = "https://x.com/shibufyo69";
 
 // -------- LISTA DAS 27 SEÇÕES --------
 const sectionsData = [
